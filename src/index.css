@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .step-gradient {
+    @apply text-white border-light-blue bg-gradient-to-br from-light-pink to-light-blue;
+  }
+  .button-gradient {
+    @apply text-white bg-gradient-to-bl from-light-blue to-light-pink;
+  }
+  .phoneView-gradient {
+    @apply text-white bg-gradient-to-tr from-light-blue to-light-pink;
+  }
+}
