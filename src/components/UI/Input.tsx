@@ -6,6 +6,7 @@ export type InputProps = {
   id?: string;
   inputRef?: React.Ref<HTMLInputElement>;
   hasError?: boolean;
+  maxLength?: number;
   errorMessage?: string;
   type?: string;
   label?: string;
@@ -27,7 +28,7 @@ const Input = (props: InputProps) => {
   const inputClassName = twMerge(
     'w-full rounded-lg border border-gray-300 outline-none text-sm',
     props.inputClass,
-    props.hasError && 'border-red-500 text-red-500'
+    props.hasError && 'border-warm-red text-warm-red'
   );
   return (
     <div className="relative w-full">
